@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="container mt-5">
   <ul>
       <li>
           <nuxt-link to="/setting">this is setting index</nuxt-link>
@@ -10,7 +10,7 @@
       <li>
           <nuxt-link to="/setting/tab2">tab2</nuxt-link>
       </li>
-       <li>
+       <li><div class=""></div>
           <nuxt-link to="/setting/tab3">tab3</nuxt-link>
       </li>
   </ul>

@@ -1,11 +1,11 @@
 <template>
-    <div class="header container">
+    <div class="header ">
     
         <ul class="container">
-            <li><a href="">Home</a></li>
+            <li> <NuxtLink to="/">Home</NuxtLink></li>
             <li><a href="">About</a></li>
-            <li><a href="">Setting</a></li>
-            <li><a href="">Intro</a></li>
+            <li> <NuxtLink to="/product">Product</NuxtLink></li>
+             <li><NuxtLink to="/setting">Setting</NuxtLink></li>
         </ul>
     </div>
 </template>
@@ -27,4 +27,8 @@
         text-decoration: none;
       
     }
+     .nuxt-link-active{
+    font-weight: 700;
+    color: wheat;
+  }
 </style>
