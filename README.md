@@ -18,3 +18,8 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+<!-- nguyen vamn ton -->
+asyncData giup cho viec chay data tro nen có trình tự
+2 param:
+    context: phần đã thực khi khi kết nối với api
+    callback: set data vào async data và template vue truy cập được vào và đổ ra dom
