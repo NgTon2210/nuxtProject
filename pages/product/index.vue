@@ -1,16 +1,24 @@
 <template>
   <div class="container">
-
+    <button @click.prevent="openModal">Click</button>
      <div class="list" >
-       
         <Product v-for="product in products" :id="product._id" :key="product.id" :name="product.name" :desc="product.desc" :thuml="product.thuml"/>
      </div>
+       <v-modal name="test" />
   </div>
+
 </template>
+
 <script>
+
 import Product from './../../components/Product/Product'
 export default {
-    
+    methods:{
+      openModal(){
+        console.log('ok')
+        this.$modal.open({name:'test'})
+      }
+    },
     components:{
       Product
     }, 
