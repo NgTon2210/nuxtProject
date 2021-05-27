@@ -1,10 +1,13 @@
 <template>
   <div class="container">
-    <button @click.prevent="openModal">Click</button>
+    <button class="btn btn-success mt-5" @click.prevent="openModal">Add Product</button>
+
      <div class="list" >
         <Product v-for="product in products" :id="product._id" :key="product.id" :name="product.name" :desc="product.desc" :thuml="product.thuml"/>
      </div>
-       <v-modal name="test" />
+       <v-modal name="test" >
+        <h1>lorem</h1>
+       </v-modal>
   </div>
 
 </template>
